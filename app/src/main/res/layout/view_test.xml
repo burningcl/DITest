@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <View
+        style="@style/Line"/>
+
+    <TextView
+        style="@style/Item"
+        android:text="-------TestView-------"/>
+
+    <TextView
+        android:id="@+id/tv_view_test"
+        style="@style/Item"
+        android:text="this is a TextView in view"/>
+
+    <EditText
+        android:id="@+id/et_view_test"
+        style="@style/Item"
+        android:text="this is a EditText in view"/>
+
+    <ImageView
+        android:id="@+id/iv_view_test"
+        style="@style/Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/github"/>
+
+</LinearLayout>

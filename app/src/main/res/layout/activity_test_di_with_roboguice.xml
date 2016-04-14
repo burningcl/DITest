@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true">
+
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv"
+				style="@style/Item"
+				android:text="this is a TextView"/>
+
+			<EditText
+				android:id="@+id/et"
+				style="@style/Item"
+				android:text="this is a EditText"/>
+
+			<ImageView
+				android:id="@+id/iv"
+				style="@style/Item"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/github"/>
+
+			<com.skyline.ditest.roboguice.RoboGuiceTestView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+
+			<fragment
+				android:name="com.skyline.ditest.roboguice.RoboGuiceTestFragment"
+				android:id="@+id/fragmentWithRoboGuice"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
